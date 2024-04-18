@@ -1,0 +1,25 @@
+label {
+    display: block;
+    margin-top: 20px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  input {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px #333;
+  }
+  
+  label:hover {
+    transform: translateY(-5px);
+  }
+  

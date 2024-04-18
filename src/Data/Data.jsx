@@ -1,0 +1,1 @@
+export const Degree_list = ["React-JS","Front End Developer","Web Developent"]
