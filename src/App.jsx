@@ -1,6 +1,4 @@
-// App.jsx
-
-import  {  useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Portfolio from './Pages/Portfolio';
@@ -10,13 +8,8 @@ import Contact from './Pages/Contact';
 import Resume from './Pages/Resume';
 import Loader from './component/Loader';
 
-
-
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
-
-    
-
 
     useEffect(() => {
         const isLoadingTrue = setTimeout(() => {
@@ -27,7 +20,6 @@ const App = () => {
 
     return (
         <Router>
-           
             {isLoading ? (
                 <Loader />
             ) : (
