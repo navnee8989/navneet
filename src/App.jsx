@@ -6,31 +6,36 @@ import About from './Pages/About';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
 import Resume from './Pages/Resume';
-import Loader from './component/Loader';
+import Loader from './components/Loader'; // Corrected import path
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const isLoadingTrue = setTimeout(() => {
+        // Simulate a loading delay (remove in production)
+        const loadingTimeout = setTimeout(() => {
             setIsLoading(false);
         }, 2000);
-        return () => clearTimeout(isLoadingTrue);
+
+        // Clean up the timeout to prevent memory leaks
+        return () => clearTimeout(loadingTimeout);
     }, []);
 
     return (
         <Router>
+          
             {isLoading ? (
                 <Loader />
             ) : (
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/resume" element={<Resume />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/contact" element={<Contact />} />
+              
+                    <Route path="/navneet/" element={<Home />} />
+                    <Route path="/navneet/home" element={<Home />} />
+                    <Route path="/navneet/about" element={<About />} />
+                    <Route path="/navneet/portfolio" element={<Portfolio />} />
+                    <Route path="/navneet/resume" element={<Resume />} />
+                    <Route path="/navneet/blog" element={<Blog />} />
+                    <Route path="/navneet/contact" element={<Contact />} />
                 </Routes>
             )}
         </Router>
