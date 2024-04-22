@@ -67,9 +67,9 @@ const Sidebar = () => {
                     <ul className={isLoading ? 'p-0' : 'p-2'}>{renderLinks}</ul>
                 </div>
             </div>
-            <div className="social-icon mobile:hidden" style={{ flexDirection: isLoading ? 'row' : 'column' }}>
+            <div className="social-icon mobile:hidden " style={{ flexDirection: isLoading ? 'row' : 'column' }}>
                 {socialIcons.map((socialIcon, index) => (
-                    <div key={index} className="icon">
+                    <div key={index} className="icon mx-auto w-[80%]">
                         <Link to={socialIcon.link} className="text-white hover:text-red-600 transition-colors">
                             {socialIcon.icon}
                         </Link>
