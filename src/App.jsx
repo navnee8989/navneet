@@ -21,7 +21,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router basename="/navneet">
+    <Router >
       {isLoading ? (
         <Loader />
       ) : (
