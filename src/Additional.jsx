@@ -112,11 +112,11 @@ export const CardData = [
 
 // Define the list of links
 export const links = [
-  { to: "/navneet/home", icon: <IoMdHome />, text: "Home" },
-  { to: "/navneet/about", icon: <FaUser />, text: "About" },
-  { to: "/navneet/resume", icon: <IoSettingsSharp />, text: "Resume" },
-  { to: "/navneet/portfolio", icon: <FaEye />, text: "Portfolio" },
-  { to: "/navneet/contact", icon: <RiMessage2Fill />, text: "Contact" },
+  { to: "/home", icon: <IoMdHome />, text: "Home" },
+  { to: "/about", icon: <FaUser />, text: "About" },
+  { to: "/resume", icon: <IoSettingsSharp />, text: "Resume" },
+  { to: "/portfolio", icon: <FaEye />, text: "Portfolio" },
+  { to: "/contact", icon: <RiMessage2Fill />, text: "Contact" },
 ];
 
 // Define the array of social icons

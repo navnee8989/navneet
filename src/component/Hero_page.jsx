@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../style/hero-page.css';
 import { Degree_list } from '../Data/Data';
-import videoBackground from '../assets/pexels_videos_2792370 (1080p)(1).mp4'; // Import your video file
+import videoBackground from '../assets/pexels_videos_2792370 (1080p)(1).mp4'; 
 
 const Hero_page = () => {
     const [Degree, setDegree] = useState(0);
